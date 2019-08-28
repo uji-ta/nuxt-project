@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        nuxt-anysense
+        nuxt-idea
       </h1>
       <h2 class="subtitle">
         My flawless Nuxt.js project
