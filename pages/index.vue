@@ -30,10 +30,17 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import { async } from 'q';
 
 export default {
   components: {
     Logo
+  },
+  async mounted(){
+    console.log(
+      JSON.stringify(await
+        this.$axios.$get('https://qiita.com/api/v2/items?query=tag:nuxt.js'), true, '')
+      )
   }
 }
 </script>
